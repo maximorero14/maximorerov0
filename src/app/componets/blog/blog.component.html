@@ -1,0 +1,5 @@
+<p>blog works!</p>
+<div *ngFor="let article of articles">
+    <app-article (articleClicked)="clickArticle($event)" [article]="article"></app-article>
+</div>
+
