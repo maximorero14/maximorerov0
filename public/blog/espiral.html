@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Clean Blog - Sample Post</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">MaxiMorero</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/index">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('../img/espiral/post.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h2 class="subheading"></h2>
+                        <h2 class="subheading"></h2>
+                        <h1>Espiral</h1>
+                        <span class="meta">Julio 23, 2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>
+                        Hola, hoy contaré un problema que me gusto mucho y la forma en que lo resolvi, intente buscar el problema en google para ver cómo se llamaba pero no lo encontré por lo que lo nombre "Espiral", este problema fue uno de los tantos en la hackathon organizada
+                        por mercadoLibre en Junio del 2016.
+                    </p>
+
+                    <h2 class="section-heading">El problema:</h2>
+
+                    <p>
+                        La mejor forma de explicar este problema es con un ejemplo. Voy a tomar como ejemplo una matriz de orden 7 (7x7) y pondre los numero en forma de espiral, tal y como muestra la imagen
+                    </p>
+
+                    <img class="img-responsive center-block" src="../img/espiral/espiral1.png" alt="">
+
+                    <p>
+                        Si tomamos las dos diagonales de la matriz obtendremos los números:
+                    </p>
+
+                    <img class="img-responsive center-block" src="../img/espiral/espiral2.png" alt="">
+                    <br>
+                    <blockquote>
+                        1, 3, 5, 7, 9, 13, 17, 21, 25, 31, 37, 43, 49
+                    </blockquote>
+
+                    <p>
+                        Tenemos un total de 13 numeros, de los cuales los siguientes son números primos:
+                    </p>
+
+                    <img class="img-responsive center-block" src="../img/espiral/espiral3.png" alt="">
+                    <br>
+                    <blockquote>
+                        3, 5, 7, 13, 17, 31, 37, 43
+                    </blockquote>
+
+
+                    <p>
+                        La longitud de los numeros de las diagonales es 13 y la de los números primos es 8 por lo tanto alrededor del 62% son números primos.
+                    </p>
+                    <p>
+                        El objetivo del problema es averiguar el número de orden de la matriz tiene sus diagonales por debajo del 10% de numeros primos.
+                    </p>
+
+                    <h2 class="section-heading">La solución:</h2>
+                    <p>
+                      Esta es la solución que a mi se me ocurrio implementada en C#
+                    </p>
+                    <a href="https://github.com/maximorero14/Espiral">https://github.com/maximorero14/Espiral</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; maximorero 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

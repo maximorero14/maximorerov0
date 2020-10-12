@@ -1,0 +1,11 @@
+{
+  "name"         : "maximorero",
+  "version"      : "0.0.1",
+  "description"  : "Pagina personal de Maximiliano Morero",
+  "main"         : "server.js",
+  "author"       : "Morero Maximiliano",
+  "dependencies" : {
+    "express"    : "~3.4.4",
+    "mongoose"   : "latest"
+  }
+}
