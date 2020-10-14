@@ -7,7 +7,6 @@ import { ExamplesComponent } from './componets/examples/examples.component';
 import { PageNotFoundComponent } from './componets/page-not-found/page-not-found.component';
 import { SingleBlogComponent } from './componets/single-blog/single-blog.component';
 import { ArrocinComponent } from './blogs/arrocin/arrocin.component';
-import { ArrocinGameComponent } from './blogs/arrocin-game/arrocin-game.component';
 
 
 const routes: Routes = [

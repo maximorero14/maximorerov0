@@ -18,7 +18,6 @@ import { PageNotFoundComponent } from './componets/page-not-found/page-not-found
 import { HeroeComponent } from './componets/heroe/heroe.component';
 import { PortadaComponent } from './componets/portada/portada.component';
 import { ArrocinComponent } from './blogs/arrocin/arrocin.component';
-import { ArrocinGameComponent } from './blogs/arrocin-game/arrocin-game.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +36,6 @@ import { ArrocinGameComponent } from './blogs/arrocin-game/arrocin-game.componen
     HeroeComponent,
     PortadaComponent,
     ArrocinComponent,
-    ArrocinGameComponent
   ],
   imports: [
     BrowserModule,
