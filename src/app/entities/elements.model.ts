@@ -1,5 +1,6 @@
 export interface Element {
-    id: number;
+    id: string;
     type: string;
     data?: string;
+    data2?: string;
 }

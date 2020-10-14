@@ -81,8 +81,8 @@
 
       $('.navbar-toggler, .navbar-nav li a, .overlay').on('click', function () {
           $('.navbar-toggler').toggleClass('active')
-        //   $('#js-navbar-menu').toggleClass('active');
-        //   $('.navbar-collapse').toggleClass('show');
+          $('#js-navbar-menu').toggleClass('active');
+          $('.navbar-collapse').toggleClass('show');
           overlay.toggleClass('active');
           navc.toggleClass('active');
       });  

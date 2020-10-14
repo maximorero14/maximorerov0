@@ -1,5 +1,6 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
 import {Article} from '../../entities/article.model';
+import { ArticlesService } from '../../servicies/articles.service';
 
 @Component({
     selector: 'app-article',
@@ -7,11 +8,15 @@ import {Article} from '../../entities/article.model';
 })
 
 export class ArticleComponent {
+    articles: Article[];
+    constructor(
+      private articlesService: ArticlesService){
+    }
     @Input() article: Article;
-    @Output() articleClicked: EventEmitter<number> = new EventEmitter();
+    @Output() articleClicked: EventEmitter<string> = new EventEmitter();
 
-    showId(){
-        console.log(this.article.id);
-        this.articleClicked.emit(this.article.id);
+
+    ngOnInit() {
+      this.articles = this.articlesService.getAllArticle();
     }
 }

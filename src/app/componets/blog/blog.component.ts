@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from 'src/app/entities/article.model';
 
 @Component({
   selector: 'app-blog',
@@ -6,23 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-
-  title = 'maximorero14';
-  articles = [{
-    id: 1,
-    type: 'pepe'
-  },
-  {
-    id: 2,
-    type: 'jose'
-  }];
-
+  
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  clickArticle(id: number){
-    console.log('por diosss' + id);
   }
 }
